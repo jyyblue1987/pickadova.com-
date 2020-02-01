@@ -1,0 +1,27 @@
+https://testproject-11084.firebaseapp.com/
+https://testproject-11084.firebaseapp.com/Profile%20View%20User%20Edit.html
+ 
+frount design will provide by client
+project devided in to 3 phase
+milestone also devided in 3 according to phase
+
+
+
+
+Project URL : https://www.freelancer.com/projects/psd-to-html/Website-Admin-For-Dating-Site/
+Project ID: 21081172
+Project Title : Website and Admin For a Dating Site,
+
+Client Details : 
+Company Name : Nare Co Pty Ltd
+Person name : Andrew Nada
+Domain name : www.pickadove.com
+Email : justjap12@gmail.com
+whatsapp : +061411163588
+
+Service : Laravel
+Time Line : 50 days
+project cost : $ 2500 AUD
+1st milestone 850 Created 
+2nd milestone 800
+3rd milestone 850
