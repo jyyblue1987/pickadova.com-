@@ -41,24 +41,25 @@
     </div>
         <div class="navbar_btm notranslate">
             <div class="navbar_btm_div " id="navbar-state-element">
-                
-                <ul>
-                    <li class="states" data-toggle="modal" data-target="#myModal">STATES</li>
-                    @php  $state = StatesController::get();
-                          $region_cookie = Cookie::get('user_state');
-                      
-                        if($region_cookie){
-                           $region_cookie = json_decode($region_cookie);
-                         }
-                   
-                    @endphp
-                    @if($state)
-                     @foreach($state as $key=>$v) 
-                    <li data-id="{{$v->short_name}}" class="@if($region_cookie) {{($region_cookie->region == $v->short_name)?'nav_active':''}}  @endif states_data  navbar-state-btn1" >{{$v->short_name}}</li>
-                     @endforeach
-                     @endif
-                   </ul>
-                <button class="set_btn" id="navbar-state-btn">Set Default</button>
+                <div style="margin: 0 auto;width: 1040px;">    <!-- Olexsandr Changes: Static body -->            
+                    <ul>
+                        <li class="states" data-toggle="modal" data-target="#myModal">STATES</li>
+                        @php  $state = StatesController::get();
+                            $region_cookie = Cookie::get('user_state');
+                        
+                            if($region_cookie){
+                            $region_cookie = json_decode($region_cookie);
+                            }
+                    
+                        @endphp
+                        @if($state)
+                        @foreach($state as $key=>$v) 
+                        <li data-id="{{$v->short_name}}" class="@if($region_cookie) {{($region_cookie->region == $v->short_name)?'nav_active':''}}  @endif states_data  navbar-state-btn1" >{{$v->short_name}}</li>
+                        @endforeach
+                        @endif
+                    </ul>
+                    <button class="set_btn" id="navbar-state-btn">Set Default</button>
+                </div>    
             </div>
         </div>
     </div>
