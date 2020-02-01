@@ -11,7 +11,7 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
-              <div id="state-modal-val" class="states_modal_body modal-body navbar_btm">
+              <div id="state-modal-val" class="states_modal_body modal-body navbar_btm" style="height:230px"> <!-- Olexsandr -->
                 <h3>Welcome To Pick a Dove</h3>
                 @php  $state = StatesController::get();
                           $region_cookie = Cookie::get('user_state');
