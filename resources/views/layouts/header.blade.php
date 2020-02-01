@@ -2,7 +2,7 @@
 <div class="navbar">
        <div class="navbar_top">
       
-            <a href="{{url('/')}}" ><img src="{{URL::ASSET('images/picadova.png')}}" style="width:25%;margin-top: 7px; float: left;"></a>
+            <a href="{{url('/')}}" ><img src="{{URL::ASSET('images/picadova.png')}}" style="width:25%;float: left;"></a>
     
       <div class="nav1-right">
         <div id="google_translate_element" style="color: gray!important; margin-top: 19px;"></div>  
