@@ -7,11 +7,12 @@ use App\AdminModel\Packages;
 use App\AdminModel\Transation;
 use App\User;
 use Auth;
+use Log;
+
 class PaymentController extends Controller
 {
 
     public function index(Request $request){
-        
         $packages =Packages::all();
         return view('payment',compact('packages'));
     }
@@ -59,7 +60,7 @@ class PaymentController extends Controller
          $form['item_number'] = $save['order_id'];
          $form['item_name'] = "Package";
          $form['amount'] = $request->amount;
-         $form['currency_code'] = 'USD';
+         $form['currency_code'] = 'AUD';
          $form['cancel_return'] = url('payment').'?status=cancel';
          $form['return'] = url('payment')."?status=success";
          $form['notify_url'] = route('payment_response');
@@ -76,7 +77,7 @@ class PaymentController extends Controller
 
 
     public function payment_response(Request $request){
-     
+      Log::info(json_encode($request->all()));
      if($request->input('payment_status') == 'Completed'){
          
          $save['status'] = $request->payment_status;
