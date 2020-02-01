@@ -68,7 +68,7 @@
         var infoWindow = new google.maps.InfoWindow;
        
           // Change this depending on the name of your PHP or XML file
-          downloadUrl('{{url("get_map_user.xml")}}', function(data) {
+          downloadUrl('{{url("get_map_user")}}', function(data) {
             var xml = data.responseXML;
             var new_mark = [];
             var markers = xml.documentElement.getElementsByTagName('marker');

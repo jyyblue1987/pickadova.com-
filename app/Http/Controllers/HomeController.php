@@ -290,7 +290,10 @@ class HomeController extends Controller
 
 
     public function get_map_user(){
-      $user =User::select('id','fname','lname','address','image','lat','lang','type')->where('type','Advertise')->get();
+      $user =User::select('id','fname','lname','address','image','lat','lang','type')
+        ->where('type', 'Advertise')  // Olexsandr: only show Active or Online Memebers
+        ->where('live_status', 'ON')
+        ->get();
      
        return response()->view('get_map_user', compact('user'))->header('Content-Type', 'text/xml');
     }

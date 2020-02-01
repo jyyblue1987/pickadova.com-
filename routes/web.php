@@ -31,7 +31,7 @@ Route::get('/recent_comment', 'HomeController@recent_comment')->name('recent_com
 
 Route::get('/map', 'HomeController@map'); 
 Route::get('/dynamic_map', 'HomeController@dynamic_map'); 
-Route::get('/get_map_user.xml', 'HomeController@get_map_user'); 
+Route::get('/get_map_user', 'HomeController@get_map_user'); 
 
 Route::post('/lock_photo_payment', 'LockPhotoController@paypal')->name('lock_photo_payment'); 
 Route::post('/lock_photo_payment_res', 'LockPhotoController@paypalresponse')->name('lock_photo_payment_res'); 
