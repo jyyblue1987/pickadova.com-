@@ -3219,10 +3219,20 @@ textarea#comment_area {
 }
 .comment1
 {
-    height: 500px;
+    max-height: 500px; /* Olexsandr */
+    padding: 10px 0px 20px 0px;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.complaint-box
+{
+    max-height: 500px;  /* Olexsandr */
+    padding: 10px 0px 20px 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 div#scroll_view {
     float: left;
     width: 73%;

@@ -210,9 +210,14 @@ padding-left: 9px !important;
                         
                         @foreach($start_work as  $key=>$v)
                           <div class="week-work" >
-                          <p>
-                            <span class="day-name" >@php echo BasicController::day_name($key); @endphp {{$v}} - {{$end_work->$key}}</span></p></div>
+                            <p>
+                              <span class="day-name" >@php echo BasicController::day_name($key); @endphp {{$v}} - {{$end_work->$key}}</span>
+                            </p>
+                          </div>
                         @endforeach
+                        <div>
+                            {!!$user->about_me !!}
+                        </div>  
                   <!--   <div><p>Mon 10:00</p>   <span>AM–8:00 PM</span></div>
                     <div><p>Wed 10:00</p>   <span>AM–8:00 PM</span></div>
                     <div><p>Thu&nbsp; 10:00</p>   <span>AM–8:00 PM</span></div>

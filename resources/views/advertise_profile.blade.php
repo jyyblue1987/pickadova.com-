@@ -5,6 +5,12 @@
 
 @section('content')
 <style type="text/css">
+
+.pink_bar_btm li.active {
+          border-bottom: 4px solid #f84f73;
+          float: left;
+  }
+
   .week-work {
    float: left;
    width: 100%;
